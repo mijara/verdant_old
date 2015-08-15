@@ -1,8 +1,8 @@
 Array
 =====
 
-- El array por defecto funciona como un vector, lo que implica tener métodos para agregar al final, etc.
-- Si el array es creado con un tamaño inicial, se toma como un Array normal, es decir, no variará en tamaño.
-- Adicionalmente, si el array es creado como un ArrayList y luego se desea cerrar, se puede llamar al método
-`lock`, el cual cerrará la lista, transformandola a un array normal.
-    * Esto implica métodos para saber si el array está cerrado o no.
+- The default array works like a vector.
+- If the array is constructed with an initial size, then we take it to be a common array, i.e. the size will
+not change.
+- If the user needs to close the array, the method `lock` can be called.
+    * This implies methods to check if the array is locked or not.
