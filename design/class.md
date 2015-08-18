@@ -6,6 +6,7 @@ Classes
     + `+` for public.
     + `-` for private.
     + `#` for protected.
+- Classes can inherit just one class.
 
 ## Attributes
 - Attributes are private by default.
@@ -16,20 +17,22 @@ Classes
         myFloat = value + 2;
     }
     ```
-    That method will be called automatically. And the getter will be:
+    That method will be called automatically. And the getter would be:
     ```
     get myFloat()
     {
         return myFloat;
     }
     ```
-    Note that the type returned is not needed.
+    Note that the return type is not needed.
+
 - Attributes that are marked with a `!` at the end of the type are readonly.
 
 ## Methods
 - Methods are public by default.
 - You can pass a primitive type by reference by receiving `<type>&` as parameter.
-- The constructor is just another method, is public by default and is called when the client calls new MyClass();
+- The constructor is just another method, is public by default and is called when the client calls new `<class-name>()`.
+-
 
 ## Example
 ```
@@ -79,4 +82,6 @@ static void someStaticMethod()
 {
     // do stuff.
 }
+
+void someAbstractMethod(int someValue);
 ```
