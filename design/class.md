@@ -31,8 +31,8 @@ Classes
 ## Methods
 - Methods are public by default.
 - You can pass a primitive type by reference by receiving `<type>&` as parameter.
-- The constructor is just another method, is public by default and is called when the client calls new `<class-name>()`.
--
+- The constructor is just another method, is public by default and is called
+when the client calls new `<class-name>()`.
 
 ## Example
 ```
