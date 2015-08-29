@@ -41,7 +41,7 @@ class MyClass;
 static int myStaticAttribute;
 int myPrivateDefaultInt;
 + int myPublicInt;
-- myPrivateInt;
+- int myPrivateInt;
 
 MyClass()
 {
