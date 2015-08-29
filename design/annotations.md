@@ -8,6 +8,5 @@ by default.
 ```
 annotation myAnotation;
 
-String pichula = "Mediana?";
-
+String value = "Default value.";
 ```
