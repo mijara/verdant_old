@@ -11,8 +11,8 @@ func<type>(arg_type_1, arg_type_2, ...) myField;
 
 ## Example
 ```
-func<int>(int) mySquareLambda = (x) x * x;
+func<int>(int) mySquareLambda = x: x * x;
 
 someFunction(mySquareLambda);
-someFunction((x) x * x)
+someFunction(x: x * x)
 ```
