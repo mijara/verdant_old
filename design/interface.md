@@ -8,16 +8,16 @@ Interfaces
 ```
 interface MyInterface;
 
-void somePublicAbstractMethod();
-- void somePrivateAbstractMethod();
+void someAbstractMethod();
 ```
+
 ## Example of implementing class
 ```
 class MyClass;
 
 implements MyInterface;
 
-override void somePublicAbstractMethod()
+override void someAbstractMethod()
 {
     // do stuff.
 }
