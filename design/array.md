@@ -6,3 +6,4 @@ Array
 not change.
 - If the user needs to close the array, the method `lock` can be called.
     * This implies methods to check if the array is locked or not.
+- Arrays can be written natively as in python (i.e. [1, 2, 3, 4])
