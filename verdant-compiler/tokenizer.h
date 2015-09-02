@@ -5,9 +5,8 @@ class Tokenizer
 {
 private:
 
-
 public:
-    void tokenize(char* data);
+    void tokenize();
 };
 
 #endif // TOKENIZER_H

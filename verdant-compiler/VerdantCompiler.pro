@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.cc \
     tokenizer.cc \
-    indexbuffer.cc
+    indexbuffer.cc \
+    databuffer.cc
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -13,5 +14,6 @@ qtcAddDeployment()
 HEADERS += \
     tokenizer.h \
     tokens.h \
-    indexbuffer.h
+    indexbuffer.h \
+    databuffer.h
 

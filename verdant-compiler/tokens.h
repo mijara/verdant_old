@@ -1,16 +1,16 @@
 #ifndef TOKENS
 #define TOKENS
 
-#define TOKEN(__NAME__, X) const int __NAME__ = X;
-
-// {}, [], (), ", '
-TOKEN(CURLY_BRACKET_LEFT,   1)
-TOKEN(CURLY_BRACKET_RIGHT,  2)
-TOKEN(BRACKET_LEFT,         3)
-TOKEN(BRACKET_RIGHT,        4)
-TOKEN(PARENTHESIS_LEFT,     5)
-TOKEN(PARENTHESIS_RIGHT,    6)
-TOKEN(DOUBLE_QUOTE,         7)
-TOKEN(SINGLE_QUOTE,         8)
+enum Tokens {
+    // {}, [], (), ", '
+    CURLY_BRACKET_LEFT,
+    CURLY_BRACKET_RIGHT,
+    BRACKET_LEFT,
+    BRACKET_RIGHT,
+    PARENTHESIS_LEFT,
+    PARENTHESIS_RIGHT,
+    DOUBLE_QUOTE,
+    SINGLE_QUOTE
+};
 
 #endif // TOKENS

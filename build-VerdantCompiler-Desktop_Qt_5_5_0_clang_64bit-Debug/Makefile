@@ -50,10 +50,12 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../verdant-compiler/main.cc \
 		../verdant-compiler/tokenizer.cc \
-		../verdant-compiler/indexbuffer.cc 
+		../verdant-compiler/indexbuffer.cc \
+		../verdant-compiler/databuffer.cc 
 OBJECTS       = main.o \
 		tokenizer.o \
-		indexbuffer.o
+		indexbuffer.o \
+		databuffer.o
 DIST          = ../../../.qt/5.5/clang_64/mkspecs/features/spec_pre.prf \
 		../../../.qt/5.5/clang_64/mkspecs/qdevice.pri \
 		../../../.qt/5.5/clang_64/mkspecs/features/device_config.prf \
@@ -189,9 +191,11 @@ DIST          = ../../../.qt/5.5/clang_64/mkspecs/features/spec_pre.prf \
 		../../../.qt/5.5/clang_64/mkspecs/features/lex.prf \
 		../verdant-compiler/VerdantCompiler.pro tokenizer.h \
 		tokens.h \
-		indexbuffer.h ../verdant-compiler/main.cc \
+		indexbuffer.h \
+		databuffer.h ../verdant-compiler/main.cc \
 		../verdant-compiler/tokenizer.cc \
-		../verdant-compiler/indexbuffer.cc
+		../verdant-compiler/indexbuffer.cc \
+		../verdant-compiler/databuffer.cc
 QMAKE_TARGET  = VerdantCompiler
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = VerdantCompiler
@@ -546,8 +550,7 @@ compiler_clean:
 
 ####### Compile
 
-main.o: ../verdant-compiler/main.cc ../verdant-compiler/tokenizer.h \
-		../verdant-compiler/tokens.h
+main.o: ../verdant-compiler/main.cc ../verdant-compiler/tokenizer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../verdant-compiler/main.cc
 
 tokenizer.o: ../verdant-compiler/tokenizer.cc ../verdant-compiler/tokenizer.h \
@@ -556,6 +559,9 @@ tokenizer.o: ../verdant-compiler/tokenizer.cc ../verdant-compiler/tokenizer.h \
 
 indexbuffer.o: ../verdant-compiler/indexbuffer.cc ../verdant-compiler/indexbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o indexbuffer.o ../verdant-compiler/indexbuffer.cc
+
+databuffer.o: ../verdant-compiler/databuffer.cc ../verdant-compiler/databuffer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o databuffer.o ../verdant-compiler/databuffer.cc
 
 ####### Install
 

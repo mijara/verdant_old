@@ -11,11 +11,7 @@ private:
     std::vector<int> types;
 
 public:
-    void setPosition(int index, int position);
-    void setLength(int index, int length);
-    void setType(int index, int type);
-
-    void ensureCapacity(size_t index);
+    void add(int position, int length, int type);
     int size();
 };
 
