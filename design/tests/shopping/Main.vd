@@ -1,4 +1,4 @@
-import "Shopping.vd";
+import "Shopping";
 
 main (string[] args)
 {
